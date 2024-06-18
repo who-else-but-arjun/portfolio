@@ -13,12 +13,12 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
 }
 #p1{
-    background-image: url("Untitled(1).png");
+    background-image: url("Untitled (1).png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 #p2{
-    background-image: url("Untitled(2).png");
+    background-image: url("Untitled (2).png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -75,12 +75,12 @@
 }
 @media screen and (max-width: 768px){
     #p1{
-        background-image: url("Untitled(1).png");
+        background-image: url("Untitled (1).png");
         background-size: cover;
         background-repeat: no-repeat;
     }
     #p2{
-        background-image: url("Untitled(2).png");
+        background-image: url("Untitled (2).png");
         background-size: cover;
         background-repeat: no-repeat;
     } 
