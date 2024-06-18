@@ -1,0 +1,71 @@
+.gallery-container {
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#galleryImage {
+    max-height: 390px;
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+.description {
+    margin: 5%;
+    margin-left: 10%;
+    background-color: rgba(9, 1, 42, 0.7); /* Semi-transparent black background */
+    color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 80%; /* Adjust the width as needed */
+    text-align: center;
+    font-size: 1.4em;
+    box-sizing: border-box;
+}
+#galleryImage {
+    display: block;
+    max-width: 80%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow to the image */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for scaling and shadow */
+}
+#galleryImage:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);/* Scale up by 10% on hover */
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(14, 1, 52, 0.912);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 15px; /* Increased padding */
+    border-radius:100px;
+    z-index: 1;
+    font-size: 40px; /* Increased font size */
+    transition: background-color 0.3s, transform 0.3s; /* Added transition for smooth effect */
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: rgba(0, 0, 0, 0.7); /* Darker background on hover */
+    transform: translateY(-50%) scale(1.1); /* Increased size on hover */
+}
+
+.prev-btn {
+    left: 20px; /* Adjusted position */
+}
+
+.next-btn {
+    right: 20px; /* Adjusted position */
+}

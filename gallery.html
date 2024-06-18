@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel ="icon" type="image/jpeg" href="/images/1689194596463.jpeg"> 
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <h1>Arjun Verma</h1>
+                <p id="college">Indian Institure of Technology Guwahati <img src="images/IIT_Guwahati_Logo.svg.webp" alt="College Logo"> </p>
+                
+            </div>
+            <nav id = "nav">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">&#9776;</label>
+                <ul>
+                    <li><a href="homepage.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>  
+                    <li><a href="contactme.html">Contact</a></li>                  
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="gallery" class="section">
+        <div class="container">
+            <div class="gallery-container">
+                <img id="galleryImage" src="" alt="Gallery Image">               
+                <button id="prevBtn" class="prev-btn">&lt;</button>
+                <button id="nextBtn" class="next-btn">&gt;</button>
+            </div>
+            <p id="description" class="description"></p> 
+        </div>
+        <div class ="box_des">
+           
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-icons">
+                <a href="mailto:arjun.verma@iitg.ac.in" target="_blank"><img src="images/outlook.png" alt="Email"></a> 
+                <a href="https://www.instagram.com/___.arjun_._/"target="_blank"><img src="images/1384063.png" alt="Instagram"></a> 
+                <a href="https://www.linkedin.com/in/arjunverma16/" target="_blank"><img src="images/circle-linkedin-512.webp" alt="LinkedIn"></a> 
+            </div>
+            <p>&copy; 2024 Arjun Verma made with HTML/CSS</p>
+        </div>
+    </footer>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const images = ["gl/IMG-20240303-WA0011.jpg", "gl/IMG-20240303-WA0014.jpg", "gl/IMG-20240308-WA0005.jpg","gl/IMG-20240512-WA0003.jpg","gl/IMG-20240512-WA0004.jpg","gl/IMG-20240512-WA0005.jpg","gl/IMG-20240512-WA0006.jpg","gl/IMG-20240512-WA0007.jpg"]; // Add your image URLs here
+        const descriptions = ["1st in AcroYoga - Barak Hostel", "Kho-Kho match", "Udgam 2024","Kriti 2024 Runner-Up","Kriti 2024 Runner-Up","Alcheringa 2024","Bhupen Hazarika Auditorium IITG","Graffiti At Barak Hostel"]; // Add your descriptions here
+        let currentIndex = 0;
+        const galleryImage = document.getElementById("galleryImage");
+        const description = document.getElementById("description");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+    
+        // Function to show the current image and description
+        function showImage(index) {
+            galleryImage.src = images[index];
+            description.textContent = descriptions[index];
+        }
+    
+        // Show initial image and description
+        showImage(currentIndex);
+    
+        // Function to handle next button click
+        nextBtn.addEventListener("click", function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        });
+    
+        // Function to handle previous button click
+        prevBtn.addEventListener("click", function() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        });
+    });
+    
+</script>
+</body>
+</html>
