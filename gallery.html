@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel ="icon" type="image/jpeg" href="/images/1689194596463.jpeg"> 
+    <link rel ="icon" type="image/jpeg" href="1689194596463.jpeg"> 
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="gallery.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
         <div class="container">
             <div class="branding">
                 <h1>Arjun Verma</h1>
-                <p id="college">Indian Institure of Technology Guwahati <img src="images/IIT_Guwahati_Logo.svg.webp" alt="College Logo"> </p>
+                <p id="college">Indian Institure of Technology Guwahati <img src="IIT_Guwahati_Logo.svg.webp" alt="College Logo"> </p>
                 
             </div>
             <nav id = "nav">
@@ -48,15 +48,15 @@
     <footer>
         <div class="container">
             <div class="footer-icons">
-                <a href="mailto:arjun.verma@iitg.ac.in" target="_blank"><img src="images/outlook.png" alt="Email"></a> 
-                <a href="https://www.instagram.com/___.arjun_._/"target="_blank"><img src="images/1384063.png" alt="Instagram"></a> 
-                <a href="https://www.linkedin.com/in/arjunverma16/" target="_blank"><img src="images/circle-linkedin-512.webp" alt="LinkedIn"></a> 
+                <a href="mailto:arjun.verma@iitg.ac.in" target="_blank"><img src="outlook.png" alt="Email"></a> 
+                <a href="https://www.instagram.com/___.arjun_._/"target="_blank"><img src="1384063.png" alt="Instagram"></a> 
+                <a href="https://www.linkedin.com/in/arjunverma16/" target="_blank"><img src="circle-linkedin-512.webp" alt="LinkedIn"></a> 
             </div>
             <p>&copy; 2024 Arjun Verma made with HTML/CSS</p>
         </div>
     </footer>
     <script>document.addEventListener("DOMContentLoaded", function() {
-        const images = ["gl/IMG-20240303-WA0011.jpg", "gl/IMG-20240303-WA0014.jpg", "gl/IMG-20240308-WA0005.jpg","gl/IMG-20240512-WA0003.jpg","gl/IMG-20240512-WA0004.jpg","gl/IMG-20240512-WA0005.jpg","gl/IMG-20240512-WA0006.jpg","gl/IMG-20240512-WA0007.jpg"]; // Add your image URLs here
+        const images = ["IMG-20240303-WA0011.jpg", "IMG-20240303-WA0014.jpg", "IMG-20240308-WA0005.jpg","IMG-20240512-WA0003.jpg","IMG-20240512-WA0004.jpg","IMG-20240512-WA0005.jpg","IMG-20240512-WA0006.jpg","IMG-20240512-WA0007.jpg"]; // Add your image URLs here
         const descriptions = ["1st in AcroYoga - Barak Hostel", "Kho-Kho match", "Udgam 2024","Kriti 2024 Runner-Up","Kriti 2024 Runner-Up","Alcheringa 2024","Bhupen Hazarika Auditorium IITG","Graffiti At Barak Hostel"]; // Add your descriptions here
         let currentIndex = 0;
         const galleryImage = document.getElementById("galleryImage");
@@ -64,22 +64,18 @@
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
     
-        // Function to show the current image and description
         function showImage(index) {
             galleryImage.src = images[index];
             description.textContent = descriptions[index];
         }
-    
-        // Show initial image and description
+
         showImage(currentIndex);
-    
-        // Function to handle next button click
+
         nextBtn.addEventListener("click", function() {
             currentIndex = (currentIndex + 1) % images.length;
             showImage(currentIndex);
         });
-    
-        // Function to handle previous button click
+
         prevBtn.addEventListener("click", function() {
             currentIndex = (currentIndex - 1 + images.length) % images.length;
             showImage(currentIndex);
