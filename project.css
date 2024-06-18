@@ -4,33 +4,32 @@
     margin: auto;
     border-radius: 25px;
     margin-bottom: 20px;
-    background-color: #fff; /* Set background color for the box */
+    background-color: #fff; 
     background-size: contain;
-    background-repeat: no-repeat; /* Cover the entire background */
-    background-position: right; /* Center the background image */
-    position: relative;/* Set a maximum width */
-    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth hover effect */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add box shadow for depth effect */    /* Establish a positioning context for absolute positioning */
+    background-repeat: no-repeat; 
+    background-position: right; 
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
 }
 #p1{
-    background-image: url("projectfiles/Untitled\ \(1\).png");
+    background-image: url("Untitled\ \(1\).png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 #p2{
-    background-image: url("projectfiles/Untitled\ \(2\).png");
+    background-image: url("Untitled\ \(2\).png");
     background-size: contain;
     background-repeat: no-repeat;
 }
 .project:hover{
-        /* Change text color on hover */
-            transform: scale(1.05); /* Increase size on hover */
-            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Add larger box shadow on hover */
+            transform: scale(1.05); 
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); 
 }
 .project-content {
     flex: 1;
     padding: 20px;
-    position: relative; /* Establish a positioning context for absolute positioning */
+    position: relative;
 }
 
 .project-info {
@@ -76,12 +75,12 @@
 }
 @media screen and (max-width: 768px){
     #p1{
-        background-image: url("projectfiles/Untitled\ \(1\).png");
+        background-image: url("Untitled\ \(1\).png");
         background-size: cover;
         background-repeat: no-repeat;
     }
     #p2{
-        background-image: url("projectfiles/Untitled\ \(2\).png");
+        background-image: url("Untitled\ \(2\).png");
         background-size: cover;
         background-repeat: no-repeat;
     } 
